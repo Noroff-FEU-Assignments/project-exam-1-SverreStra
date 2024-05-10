@@ -24,7 +24,7 @@ function createPosts(posts) {
     <div class="card-content">
     <h2>${post.title.rendered}</h2>
     <h4>${post.date}</h4>
-    <a href="blogspecific.html?id=${post.id}" class="read-more-btn">Read More</a>
+    <a href="blogspecific.html?id=${post.id}" class="read-more-btn btn">Read More</a>
     </div>
     </li>`
   })
@@ -54,7 +54,7 @@ function postLeft(posters) {
       <div class="card-content">
         <h2>${posters.title.rendered}</h2>
         <p class="phone-away">${posters.excerpt.rendered}</p>
-        <a href="blogspecific.html?id=${posters.id}" class="read-more-btn">Read More</a>
+        <a href="blogspecific.html?id=${posters.id}" class="read-more-btn btn">Read More</a>
       </div>
     </div>`
   
@@ -81,8 +81,8 @@ function postRight(posters) {
       </div>
       <div class="card-content">
         <h2>${posters.title.rendered}</h2>
-        <p>${posters.content.rendered}</p>
-        <a href="blogspecific.html?id=${posters.id}" class="read-more-btn">Read More</a>
+        <p>${posters.excerpt.rendered}</p>
+        <a href="blogspecific.html?id=${posters.id}" class="read-more-btn btn">Read More</a>
       </div>
     </div>`
   
