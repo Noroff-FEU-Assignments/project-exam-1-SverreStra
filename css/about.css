@@ -1,0 +1,46 @@
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;
+  padding: 45px;
+}
+
+.top-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.been-there-card {
+  background: #EEE9DA;
+  color: #6096b4;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.future-card {
+  background: #6096b4;
+  color: #EEE9DA;
+}
+
+.lower-card {
+  padding: 90px;
+  line-height: 1.5;
+  background: #EEE9DA;
+  color: #6096b4;
+  font-weight: bold;
+}
+
+.lower-card h5 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .top-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

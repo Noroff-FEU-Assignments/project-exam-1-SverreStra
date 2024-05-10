@@ -13,6 +13,11 @@
   .nav {
     padding: 18px 100px;
   }
+
+  .two-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (max-width: 980px) {
@@ -59,9 +64,7 @@
     display: block;
     color: #eee9da;
   }
-  .sub-nav, .home-title, .home-sub {
-    display: none;
-  } 
+  
 
   .post-container img {
     width: 100%;
@@ -83,12 +86,16 @@
 
 
 @media only screen and (max-width: 900px) {
+  
+  /*Home page*/
+  
   /*Carousel*/
 
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2 ) - 9px);
   }
 
+ 
   /*Blogs page*/
 
   .post-container {
@@ -134,11 +141,15 @@
     margin: 25px;
     padding: 20px;
   }
-
+    /*Home page*/
    /*Carousel*/
 
    .wrapper .carousel {
     grid-auto-columns: 100%;
+  }
+
+  .card-content p {
+    display: none;
   }
 
   /*About page*/

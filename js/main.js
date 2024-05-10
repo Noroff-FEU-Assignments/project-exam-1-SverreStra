@@ -35,7 +35,7 @@ function createPosts(posts) {
 // I fetched a single object
 // This one is for the left part of the page..
 const leftPosts = async () => {
-  const response = await fetch("http://mgb-api.local/wp-json/wp/v2/posts/165");
+  const response = await fetch("http://mgb-api.local/wp-json/wp/v2/posts/32");
   if (!response.ok) {
     throw new Error (`HTTP Error! status ${response.status}`);
   }
@@ -53,6 +53,7 @@ function postLeft(posters) {
       </div>
       <div class="card-content">
         <h2>${posters.title.rendered}</h2>
+        <p class="phone-away">${posters.excerpt.rendered}</p>
         <a href="blogspecific.html?id=${posters.id}" class="read-more-btn">Read More</a>
       </div>
     </div>`
@@ -62,7 +63,7 @@ function postLeft(posters) {
 // Right part of the page
 
 const rightPosts = async () => {
-  const response = await fetch("http://mgb-api.local/wp-json/wp/v2/posts/165");
+  const response = await fetch("http://mgb-api.local/wp-json/wp/v2/posts/41");
   if (!response.ok) {
     throw new Error (`HTTP Error! status ${response.status}`);
   }
@@ -80,6 +81,7 @@ function postRight(posters) {
       </div>
       <div class="card-content">
         <h2>${posters.title.rendered}</h2>
+        <p>${posters.content.rendered}</p>
         <a href="blogspecific.html?id=${posters.id}" class="read-more-btn">Read More</a>
       </div>
     </div>`

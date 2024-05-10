@@ -10,7 +10,7 @@
 
 
 ::selection {
-  color: #bdcdd6;
+  color: #000;
 }
 
 a {
@@ -243,13 +243,25 @@ header {
 .two-posts {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 50px;
+  padding: 50px;
 }
 
 .post-left, .post-right {
-  margin: 40px;
-  padding: 45px;
-  border: solid 2px red;
+  margin: 20px;
+  padding: 25px;
+  text-align: center;
 }
+
+.post-left img, .post-right img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+
 
 
 /* Footer */
@@ -266,3 +278,5 @@ footer {
   margin-bottom: auto;
   padding: 20px;
 }
+
+/*Buttons*/
