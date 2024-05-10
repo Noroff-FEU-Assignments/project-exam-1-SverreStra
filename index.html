@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="https://kit.fontawesome.com/b5536b7364.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header">
+  <header>
+    <div class="nav container">
+      <ul class="main-nav">
+        <li><a href="about.html" class="phone-active">About</a></li>
+        <li><a href="contact.html" class="phone-active">Contact</a></li>
+        <li><a href="blogs.html" class="phone-active">Blogs</a></li>
+      </ul>
+      <label id="menu">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+  </header>
+  <section class="home" id="home">
+    <div class="home-text container">
+      <a href="index.html" class="home-title">The Mountain Goat Blog</a>
+    </div>
+  </section>
+</div>
+  <div class="sub-nav container">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+    </ul>
+  </div>
+  <main class="body">
+    <div class="wrapper" id="wrapper">
+      <button id="prev-btn" class="prev-btn">
+        <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+            <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+        </svg>
+   </button>
+      <ul class="carousel" id="carousel"></ul>
+      <button id="next-btn" class="next-btn">
+        <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+          <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+        </svg>
+    </button>
+    </div>
+  </main>
+  <section class="two-posts">
+    <div class="post-left"></div>
+    <div class="post-right"></div>
+  </section>
+  <footer>
+    <div class="footer">
+      <p>Copyright &copy; 2024</p>
+    </div>
+  </footer>
+  <script src="js/button.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+</html>
