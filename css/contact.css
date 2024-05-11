@@ -4,9 +4,10 @@
   min-height: 100vh;
   padding: 2rem;
   overflow: hidden;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .form {
@@ -162,4 +163,32 @@ textarea.input {
   opacity: 1;
 }
 
+#error_message {
+  background: rgb(188, 26, 26);
+  color: #f2f2ff;
+  text-align: center;
+}
 
+
+@media only screen and (max-width: 900px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .contact-info {
+    display: none;
+  }
+
+  .form  {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media only screen and (max-width: 420px) {
+ 
+  
+}

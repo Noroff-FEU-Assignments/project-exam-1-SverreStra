@@ -2,9 +2,15 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
-  text-align: center;
+  text-align: justify;
   justify-content: center;
-  padding: 45px;
+  padding: 15px;
+}
+.about-container h2 {
+  text-align: center;
+}
+.about-container ul {
+  text-align: center;
 }
 
 .top-cards {
@@ -37,10 +43,47 @@
   font-size: 1rem;
 }
 
+.button {
+  margin-top: 15px;
+  text-align: center;
+  background: #EEE9DA;
+  padding: 20px;
+}
+
+.btn {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .future-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.9rem;
+  }
+}
+
 
 @media only screen and (max-width: 720px) {
+  .about-container {
+    font-size: .9rem;
+  }
+
   .top-cards {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .lower-card {
+    padding: 25px;
+  }
+}
+
+
+@media only screen and (max-width: 420px) {
+  .about-container {
+    font-size: .8rem;
+  }
+  .about-container h2 {
+    font-size: .9rem;
   }
 }

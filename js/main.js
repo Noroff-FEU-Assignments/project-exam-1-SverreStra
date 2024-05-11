@@ -54,7 +54,9 @@ function postLeft(posters) {
       <div class="card-content">
         <h2>${posters.title.rendered}</h2>
         <p class="phone-away">${posters.excerpt.rendered}</p>
-        <a href="blogspecific.html?id=${posters.id}" class="read-more-btn btn">Read More</a>
+        <div class="button">
+          <a href="blogspecific.html?id=${posters.id}" class="read-more-btn btn">Read More</a>
+        </div>
       </div>
     </div>`
   
@@ -82,7 +84,9 @@ function postRight(posters) {
       <div class="card-content">
         <h2>${posters.title.rendered}</h2>
         <p>${posters.excerpt.rendered}</p>
+        <div class="button">
         <a href="blogspecific.html?id=${posters.id}" class="read-more-btn btn">Read More</a>
+        </div>
       </div>
     </div>`
   

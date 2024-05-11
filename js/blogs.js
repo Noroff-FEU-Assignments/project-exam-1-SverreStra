@@ -16,8 +16,8 @@ function createPosts(posts) {
   posts.forEach(function(post){
     allPost.innerHTML += `
     <div class="posts">
-    <img src="${post.featured_media_src_url}" alt="${post.title.rendered}">
     <h2>${post.title.rendered}</h2>
+    <img src="${post.featured_media_src_url}" alt="${post.title.rendered}">
     <h4>${post.date}</h4>
     <a href="blogspecific.html?id=${post.id}" class="read-more-btn btn">Read More</a>
     </div>`

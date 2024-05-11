@@ -95,6 +95,7 @@ header {
 
 .home-title {
   font-size: 3.5rem;
+  font-weight: bold
 }
 
 .home-sub {
@@ -236,7 +237,7 @@ header {
   color: #EEE9DA;
 }
 .card {
-  text-align: center;
+  text-align: justify;
 }
 
 
@@ -244,14 +245,22 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  margin: 50px;
-  padding: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.two-posts h2 {
+  text-align: center;
+}
+
+.post-left h2 a {
+  text-align: center;
 }
 
 .post-left, .post-right {
   margin: 20px;
   padding: 25px;
-  text-align: center;
+  text-align: justify;
 }
 
 .post-left img, .post-right img {
@@ -290,10 +299,15 @@ footer {
   padding: 3px;
   line-height: 35px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .btn:hover {
   background: #f2f2f2;
   color: #1b1a1a;
   transition: 0.9s;
+}
+
+.button {
+  text-align: center;
 }
