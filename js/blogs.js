@@ -83,3 +83,12 @@ function postRight(posters) {
     </div>`
   
 };
+
+function showMore() {
+  var x = document.getElementById("two-posts");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
