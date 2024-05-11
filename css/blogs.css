@@ -33,13 +33,6 @@
   display: none;
 }
 
-.two-posts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin: 10px;
-  padding: 10px;
-}
 
 .two-posts h2 {
   text-align: center;
