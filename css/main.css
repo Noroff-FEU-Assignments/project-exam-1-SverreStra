@@ -150,6 +150,7 @@ header {
 .heading h1 {
   color: #6096b4;
   font-weight: bold;
+  text-align: center;
 }
 
 /*Carousel*/
