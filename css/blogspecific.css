@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: 1fr;
   background: #EEE9DA;
+  overflow: hidden;
 }
 
 .solo-post h2 {
