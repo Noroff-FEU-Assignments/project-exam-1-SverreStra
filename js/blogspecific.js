@@ -7,7 +7,7 @@ const newParam = new URLSearchParams(queryString);
 const id = newParam.get("id");
 console.log(id);
 
-const postUrl = "http://mgb-api.local/wp-json/wp/v2/posts/" + id;
+const postUrl = "https://www.straumstra.no/wp-json/wp/v2/posts/" + id;
 
 console.log(postUrl);
 

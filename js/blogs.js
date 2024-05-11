@@ -1,5 +1,6 @@
-const baseUrl = "http://mgb-api.local/wp-json/wp/v2/posts";
+const baseUrl = "https://www.straumstra.no/wp-json/wp/v2/posts";
 const allPost = document.querySelector(".post-container");
+const olderPosts = document.querySelector(".older-posts");
 
 const getPosts = async () => {
   const response = await fetch(baseUrl);
@@ -22,4 +23,4 @@ function createPosts(posts) {
     <a href="blogspecific.html?id=${post.id}" class="read-more-btn btn">Read More</a>
     </div>`
   })
-}
+};
