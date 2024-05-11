@@ -1,4 +1,4 @@
-const baseUrl = "https://www.straumstra.no/wp-json/wp/v2/posts?page=2&per_page=10";
+const baseUrl = "https://www.straumstra.no/wp-json/wp/v2/posts";
 const allPost = document.querySelector(".post-container");
 const olderPosts = document.querySelector(".older-posts");
 
