@@ -146,6 +146,11 @@ header {
   display: none;
 }
 
+/*Headings*/
+.heading h1 {
+  color: #6096b4;
+  font-weight: bold;
+}
 
 /*Carousel*/
 
