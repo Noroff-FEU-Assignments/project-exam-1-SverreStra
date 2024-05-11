@@ -16,9 +16,7 @@
 .post-container h2 {
   text-decoration: underline 2px solid #000;
 }
-.two-posts {
-  display: none;
-}
+
 .posts {
   padding: 20px;
   margin: 15px;
@@ -26,6 +24,47 @@
   box-shadow: 3px 3px #000;
   border-radius: 23px;
   color: #f2f2f2;
+}
+
+
+/*Show more post*/
+
+.two-posts {
+  display: none;
+}
+
+.two-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.two-posts h2 {
+  text-align: center;
+}
+
+.post-left h2 a {
+  text-align: center;
+}
+
+.post-left, .post-right {
+  margin: 20px;
+  padding: 25px;
+  text-align: justify;
+}
+
+.post-left img, .post-right img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.show-more-btn {
+  text-align: center;
+  margin-top: 10px;
 }
 @media only screen and (max-width: 980px) {
   .post-container {
