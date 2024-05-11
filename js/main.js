@@ -35,7 +35,7 @@ function createPosts(posts) {
 // I fetched a single object
 // This one is for the left part of the page..
 const leftPosts = async () => {
-  const response = await fetch("https://www.straumstra.no/wp-json/wp/v2/posts/32");
+  const response = await fetch("https://www.straumstra.no/wp-json/wp/v2/posts/167");
   if (!response.ok) {
     throw new Error (`HTTP Error! status ${response.status}`);
   }
@@ -65,7 +65,7 @@ function postLeft(posters) {
 // Right part of the page
 
 const rightPosts = async () => {
-  const response = await fetch("https://www.straumstra.no/wp-json/wp/v2/posts/36");
+  const response = await fetch("https://www.straumstra.no/wp-json/wp/v2/posts/175");
   if (!response.ok) {
     throw new Error (`HTTP Error! status ${response.status}`);
   }
