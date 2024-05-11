@@ -65,7 +65,7 @@ function postLeft(posters) {
 // Right part of the page
 
 const rightPosts = async () => {
-  const response = await fetch("http://mgb-api.local/wp-json/wp/v2/posts/41");
+  const response = await fetch("http://mgb-api.local/wp-json/wp/v2/posts/36");
   if (!response.ok) {
     throw new Error (`HTTP Error! status ${response.status}`);
   }

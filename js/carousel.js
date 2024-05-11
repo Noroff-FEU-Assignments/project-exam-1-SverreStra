@@ -3,7 +3,7 @@ const next = document.getElementById('next-btn');
 const list = document.getElementById('carousel');
 
 const itemWidth = 350
-const padding = 10
+const padding = 12
 
 prev.addEventListener('click',()=>{
   list.scrollLeft -= itemWidth + padding
