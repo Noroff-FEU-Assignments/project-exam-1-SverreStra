@@ -1,4 +1,4 @@
-const baseUrl = "http://mgb-api.local/wp-json/wp/v2/posts";
+const baseUrl = "https://www.straumstra.no/wp-json/wp/v2/posts";
 const allPost = document.querySelector(".carousel");
 const leftPost = document.querySelector(".post-left");
 const rightPost = document.querySelector(".post-right");
@@ -35,7 +35,7 @@ function createPosts(posts) {
 // I fetched a single object
 // This one is for the left part of the page..
 const leftPosts = async () => {
-  const response = await fetch("http://mgb-api.local/wp-json/wp/v2/posts/32");
+  const response = await fetch("https://www.straumstra.no/wp-json/wp/v2/posts/32");
   if (!response.ok) {
     throw new Error (`HTTP Error! status ${response.status}`);
   }
