@@ -18,7 +18,7 @@ function createPosts(posts) {
   posts.forEach(function(post){
     allPost.innerHTML += `
     <li class="card">
-    <div class="card-image" draggable="false">
+    <div class="card-image" draggable="true">
     <img src="${post.featured_media_src_url}" alt="${post.title.rendered} class="img">
     </div>
     <div class="card-content">

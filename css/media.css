@@ -115,6 +115,10 @@
     padding: 20px;
   }
 
+  .home {
+    min-height: 300px;
+  }
+
   .home-text a {
     font-size: 2rem;
   }
